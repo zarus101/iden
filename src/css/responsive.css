@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+   .course-nav{
+       display: block;
+   }
+  }
+
+  @media (max-width: 600px) {
+    .course-nav{
+        display: block;
+    }
+   }

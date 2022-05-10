@@ -11,11 +11,7 @@ const Registration = () => {
  <div class="center">
       <h1>Create your account</h1>
       <form method="post">
-        <div class="txt_field">
-          <input type="text" required/>
-          <span></span>
-          <label>Username</label>
-        </div>
+        
         <div class="txt_field">
           <input type="text" required/>
           <span></span>

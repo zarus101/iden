@@ -22,7 +22,7 @@ const Footer = () => {
       vel risus congue accumsan.
     </p>
 
-    <div class="social-link">
+    {/* <div class="social-link">
       <Link to="#">
         <ion-icon name="logo-facebook"></ion-icon>
       </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
       <Link to="#">
         <ion-icon name="logo-youtube"></ion-icon>
       </Link>
-    </div>
+    </div> */}
 
   </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
       <input type="text" name="subscribe" placeholder="Email Address"/>
       
       <button class="send-btn">
-        <ion-icon name="paper-plane"></ion-icon>
+        <h3>send</h3>
       </button>
     </div>
 

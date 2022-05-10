@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Footer from '../NavPages/Footer'
+import "../css/responsive.css"
 
 import CoursesCategoryApi from '../Api/CoursesCategoryApi'
 import ServicesApi from '../Api/ServicesApi'
@@ -45,14 +46,7 @@ const HomePage = () => {
 
 
   <div class="animation-area">
-		<ul class="box-area">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+	
     <div className="home-main">
   <p class="section-subtitle">Welcome To IDEN CENTRE FOR THE ONLINE LEARNING</p>
 
@@ -103,10 +97,10 @@ const HomePage = () => {
 
   <div className="container">
   <nav className='course-nav'>
-      <div className="btn-group">
-        <button className='btn-group__item active'  onClick={()=>{FilterItems("web-development")}}>Web-Development</button>
-        <button className='btn-group__item' onClick={()=>{FilterItems("mobile-development")}}>Mobile-Development</button>
-        <button className='btn-group__item ' onClick={()=>{FilterItems("digital-marketing")}}>Digital-Marketing</button>
+      <div className="navbtn-group">
+        <button className='navbtn-group__item active'  onClick={()=>{FilterItems("web-development")}}>Web-Development</button>
+        <button className='navbtn-group__item' onClick={()=>{FilterItems("mobile-development")}}>Mobile-Development</button>
+        <button className='navbtn-group__item ' onClick={()=>{FilterItems("digital-marketing")}}>Digital-Marketing</button>
 
     
       </div>
@@ -203,7 +197,7 @@ const HomePage = () => {
               <div class="instructor-card">
 
                       <div class="instructor-img-box">
-                        <img src={instructor.image} alt="instructor louis sullivan"/>
+                        <img src={instructor.image} alt="instructor jikesh tamang"/>
 
                         <div class="social-link">
                           <a href="#" class="facebook">
