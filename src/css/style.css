@@ -1554,7 +1554,7 @@ padding-bottom: 20px;
   top:  0;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--ultramarine-blue);
+  background: hsl(217deg 71% 8%);
   width: calc(100% - var(--px));
   padding: 30px 20px;
   display: grid;
