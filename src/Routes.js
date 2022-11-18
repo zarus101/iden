@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import CoursesCategoryApi from './Api/CoursesCategoryApi'
 import ServicesApi from './Api/ServicesApi'
 import UserPage from './AuthPages/UserPage'
@@ -10,6 +10,7 @@ import Course from './Pages/Course'
 
 import HomePage from './Pages/HomePage'
 import Login from './Pages/Login'
+import Protected from './Pages/Protected'
 import Registration from './Pages/Registration'
 import Services from './Pages/Services'
 import SingleCard from './Pages/SingleCard'
@@ -17,12 +18,13 @@ import SingleService from './Pages/SingleService'
 
 
 
-const Routes = () => {
+const Routest = () => {
   return (
-    <Router>
-        <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route exact path="/login" component={Login}/>
+    <BrowserRouter>
+    <Routes>
+     
+        <Route exact path="/" element={<Protected HomePage={HomePage}/>}/>
+        {/* <Route exact path="/login" component={Login}/>
         <Route exact path="/userpage" component={UserPage}/>
         <Route exact path="/registration" component={Registration}/>
         <Route exact path="/about" component={About}/>
@@ -35,12 +37,12 @@ const Routes = () => {
         </Route>
         <Route exact path="/singleservice/:title" component={SingleService}>
           <SingleService servicecategory={ServicesApi}/>
-        </Route>
+        </Route> */}
        
-       
-        </Switch>
-    </Router>
+    
+    </Routes>
+    </BrowserRouter>
   )
 }
 
-export default Routes
+export default Routest
